@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Khronos Group</title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta content="noarchive" name="robots" />
+		<link href="../../../../favicon.ico" rel="shortcut icon" />
+		<link href="../../../../assets/apache/groups-index-style/style.css" media="screen,projection" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="../../../../assets/js/jquery/jquery.min.js"></script>
+		<script>
+		$(function(){
+
+			// Set the path heading
+			var location = decodeURI(document.location.pathname);
+
+			var segments = location.split("/");
+			var breadcrumbs = '../../../../';
+			var currentPath = "../../../../";
+			for (var i=0; i<segments.length; i++) {
+				if (segments[i] != '') {
+					currentPath += segments[i] + '/';
+					breadcrumbs += '<a href="' +  currentPath + '">' + segments[i] + '</a>/';
+				}
+			}
+			document.title = document.domain + '127.0.0.1:127.0.0.1' + location;
+			$('#folder').html(breadcrumbs);
+			
+			// Hide the 'parent' link if we're at the top level
+			if (location == '../../../../files/ip-disclosures/') $('#parent').hide();
+
+			// Set header cell widths
+			$('hr').parent().remove();
+			var headers = $('th');
+			// First column should be the icon
+			$(headers[0]).addClass('icon');
+			// Last two columns should be 'date' and 'size' - no way to be sure really so this is a bit of a hack
+			$(headers[headers.length-1]).addClass('size');
+			$(headers[headers.length-2]).addClass('date');
+			
+			// Setup row hover
+			$('tr').mouseover(function(){this.className="hover"}).mouseout(function(){this.className=""});
+			$('td:has(a)').addClass('name');
+
+			// Refresh button
+			$('a#refresh').click(function(){window.location.reload(true);return false;});
+		});
+		</script>
+	</head>
+	<body>
+    	<div>
+        	<div id="commandbar">
+            	<a href="../../../../default.htm" id="home">home</a>
+		<a href="../default.htm" id="parent">up</a>
+            	<a href="#" id="refresh">refresh</a>
+        	</div>
+			<div id="files">
+        		<h2>
+            		Location: <span id="folder"></span>
+        		</h2>
+  <table>
+   <tr><th valign="top">&nbsp;</th><th><a href="@C=N;O=D">Name</a></th><th><a href="@C=M;O=A">Last modified</a></th><th><a href="@C=S;O=A">Size</a></th></tr>
+   <tr><th colspan="4"><hr /></th></tr>
+<tr><td valign="top"><a href="../default.htm"><img src="../../../../assets/apache/groups-index-style/icons/folder.gif" alt="[PARENTDIR]" width="16" height="16" /></a></td><td><a href="../default.htm">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td></tr>
+<tr><td valign="top"><a href="katex/default.htm"><img src="../../../../assets/apache/groups-index-style/icons/folder.gif" alt="[DIR]" width="16" height="16" /></a></td><td><a href="katex/default.htm">katex/</a></td><td align="right">2019-02-02 04:33  </td><td align="right">  - </td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.1.10.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.1.10.pdf">GLSLangSpec.1.10.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">921K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.1.20.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.1.20.pdf">GLSLangSpec.1.20.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">591K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.1.30.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.1.30.pdf">GLSLangSpec.1.30.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">705K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.1.40.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.1.40.pdf">GLSLangSpec.1.40.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">680K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.1.50.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.1.50.pdf">GLSLangSpec.1.50.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">731K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.3.30.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.3.30.pdf">GLSLangSpec.3.30.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">733K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.4.00.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.4.00.pdf">GLSLangSpec.4.00.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">848K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.4.10.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.4.10.pdf">GLSLangSpec.4.10.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">869K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.4.20.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.4.20.pdf">GLSLangSpec.4.20.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">769K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.4.30.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.4.30.pdf">GLSLangSpec.4.30.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">821K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.4.40.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.4.40.pdf">GLSLangSpec.4.40.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">858K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.4.50.diff.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.4.50.diff.pdf">GLSLangSpec.4.50.diff.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">913K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.4.50.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.4.50.pdf">GLSLangSpec.4.50.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">905K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.4.60.html">&nbsp;</a></td><td><a href="GLSLangSpec.4.60.html">GLSLangSpec.4.60.html</a></td><td align="right">2019-07-12 04:04  </td><td align="right">897K</td></tr>
+<tr><td valign="top"><a href="GLSLangSpec.4.60.pdf">&nbsp;</a></td><td><a href="GLSLangSpec.4.60.pdf">GLSLangSpec.4.60.pdf</a></td><td align="right">2019-07-12 04:04  </td><td align="right">5.1M</td></tr>
+<tr><td valign="top"><a href="glspec10.pdf">&nbsp;</a></td><td><a href="glspec10.pdf">glspec10.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">913K</td></tr>
+<tr><td valign="top"><a href="glspec11.ps">&nbsp;</a></td><td><a href="glspec11.ps">glspec11.ps</a></td><td align="right">2018-11-21 05:41  </td><td align="right">1.3M</td></tr>
+<tr><td valign="top"><a href="glspec13.pdf">&nbsp;</a></td><td><a href="glspec13.pdf">glspec13.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">1.7M</td></tr>
+<tr><td valign="top"><a href="glspec14.pdf">&nbsp;</a></td><td><a href="glspec14.pdf">glspec14.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">1.8M</td></tr>
+<tr><td valign="top"><a href="glspec15.pdf">&nbsp;</a></td><td><a href="glspec15.pdf">glspec15.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">2.0M</td></tr>
+<tr><td valign="top"><a href="glspec20.pdf">&nbsp;</a></td><td><a href="glspec20.pdf">glspec20.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">2.3M</td></tr>
+<tr><td valign="top"><a href="glspec21.pdf">&nbsp;</a></td><td><a href="glspec21.pdf">glspec21.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">2.6M</td></tr>
+<tr><td valign="top"><a href="glspec30.pdf">&nbsp;</a></td><td><a href="glspec30.pdf">glspec30.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">3.0M</td></tr>
+<tr><td valign="top"><a href="glspec31.pdf">&nbsp;</a></td><td><a href="glspec31.pdf">glspec31.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">2.1M</td></tr>
+<tr><td valign="top"><a href="glspec31undep.pdf">&nbsp;</a></td><td><a href="glspec31undep.pdf">glspec31undep.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">3.2M</td></tr>
+<tr><td valign="top"><a href="glspec32.compatibility.pdf">&nbsp;</a></td><td><a href="glspec32.compatibility.pdf">glspec32.compatibility.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">3.4M</td></tr>
+<tr><td valign="top"><a href="glspec32.core.pdf">&nbsp;</a></td><td><a href="glspec32.core.pdf">glspec32.core.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">2.4M</td></tr>
+<tr><td valign="top"><a href="glspec33.compatibility.pdf">&nbsp;</a></td><td><a href="glspec33.compatibility.pdf">glspec33.compatibility.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">3.6M</td></tr>
+<tr><td valign="top"><a href="glspec33.core.pdf">&nbsp;</a></td><td><a href="glspec33.core.pdf">glspec33.core.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">2.5M</td></tr>
+<tr><td valign="top"><a href="glspec40.compatibility.pdf">&nbsp;</a></td><td><a href="glspec40.compatibility.pdf">glspec40.compatibility.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">3.9M</td></tr>
+<tr><td valign="top"><a href="glspec40.core.pdf">&nbsp;</a></td><td><a href="glspec40.core.pdf">glspec40.core.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">2.8M</td></tr>
+<tr><td valign="top"><a href="glspec41.compatibility.pdf">&nbsp;</a></td><td><a href="glspec41.compatibility.pdf">glspec41.compatibility.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">4.1M</td></tr>
+<tr><td valign="top"><a href="glspec41.core.pdf">&nbsp;</a></td><td><a href="glspec41.core.pdf">glspec41.core.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">3.0M</td></tr>
+<tr><td valign="top"><a href="glspec42.compatibility.pdf">&nbsp;</a></td><td><a href="glspec42.compatibility.pdf">glspec42.compatibility.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">4.6M</td></tr>
+<tr><td valign="top"><a href="glspec42.core.pdf">&nbsp;</a></td><td><a href="glspec42.core.pdf">glspec42.core.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">3.5M</td></tr>
+<tr><td valign="top"><a href="glspec43.compatibility.pdf">&nbsp;</a></td><td><a href="glspec43.compatibility.pdf">glspec43.compatibility.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">3.5M</td></tr>
+<tr><td valign="top"><a href="glspec43.core.pdf">&nbsp;</a></td><td><a href="glspec43.core.pdf">glspec43.core.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">2.9M</td></tr>
+<tr><td valign="top"><a href="glspec44.compatibility.pdf">&nbsp;</a></td><td><a href="glspec44.compatibility.pdf">glspec44.compatibility.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">4.2M</td></tr>
+<tr><td valign="top"><a href="glspec44.core.pdf">&nbsp;</a></td><td><a href="glspec44.core.pdf">glspec44.core.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">3.6M</td></tr>
+<tr><td valign="top"><a href="glspec45.compatibility.pdf">&nbsp;</a></td><td><a href="glspec45.compatibility.pdf">glspec45.compatibility.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">3.4M</td></tr>
+<tr><td valign="top"><a href="glspec45.compatibility.withchanges.pdf">&nbsp;</a></td><td><a href="glspec45.compatibility.withchanges.pdf">glspec45.compatibility.withchanges.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">3.4M</td></tr>
+<tr><td valign="top"><a href="glspec45.core.pdf">&nbsp;</a></td><td><a href="glspec45.core.pdf">glspec45.core.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">2.7M</td></tr>
+<tr><td valign="top"><a href="glspec45.core.withchanges.pdf">&nbsp;</a></td><td><a href="glspec45.core.withchanges.pdf">glspec45.core.withchanges.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">2.8M</td></tr>
+<tr><td valign="top"><a href="glspec46.compatibility.pdf">&nbsp;</a></td><td><a href="glspec46.compatibility.pdf">glspec46.compatibility.pdf</a></td><td align="right">2019-10-22 05:44  </td><td align="right">3.5M</td></tr>
+<tr><td valign="top"><a href="glspec46.compatibility.withchanges.pdf">&nbsp;</a></td><td><a href="glspec46.compatibility.withchanges.pdf">glspec46.compatibility.withchanges.pdf</a></td><td align="right">2019-10-22 05:44  </td><td align="right">3.5M</td></tr>
+<tr><td valign="top"><a href="glspec46.core.pdf">&nbsp;</a></td><td><a href="glspec46.core.pdf">glspec46.core.pdf</a></td><td align="right">2019-10-22 05:44  </td><td align="right">2.9M</td></tr>
+<tr><td valign="top"><a href="glspec46.core.withchanges.pdf">&nbsp;</a></td><td><a href="glspec46.core.withchanges.pdf">glspec46.core.withchanges.pdf</a></td><td align="right">2019-10-22 05:44  </td><td align="right">2.9M</td></tr>
+<tr><td valign="top"><a href="glspec121.pdf">&nbsp;</a></td><td><a href="glspec121.pdf">glspec121.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">1.5M</td></tr>
+<tr><td valign="top"><a href="glu1.3.pdf">&nbsp;</a></td><td><a href="glu1.3.pdf">glu1.3.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">323K</td></tr>
+<tr><td valign="top"><a href="glx1.2.ps">&nbsp;</a></td><td><a href="glx1.2.ps">glx1.2.ps</a></td><td align="right">2018-11-21 05:41  </td><td align="right">213K</td></tr>
+<tr><td valign="top"><a href="glx1.3.pdf">&nbsp;</a></td><td><a href="glx1.3.pdf">glx1.3.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">619K</td></tr>
+<tr><td valign="top"><a href="glx1.4.pdf">&nbsp;</a></td><td><a href="glx1.4.pdf">glx1.4.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">446K</td></tr>
+<tr><td valign="top"><a href="glxencode1.3.pdf">&nbsp;</a></td><td><a href="glxencode1.3.pdf">glxencode1.3.pdf</a></td><td align="right">2018-11-21 05:41  </td><td align="right">756K</td></tr>
+<tr><td valign="top"><a href="GLXprotocol.ps">&nbsp;</a></td><td><a href="GLXprotocol.ps">GLXprotocol.ps</a></td><td align="right">2018-11-21 05:41  </td><td align="right">562K</td></tr>
+   <tr><th colspan="4"><hr /></th></tr>
+</table>
+		</div>
+		<div id="footer">
+			<p><a href="../../../../default.htm">Return to the Khronos Group Homepage</a>&nbsp;</p>
+		</div>
+	</div>
+</body>
+</html>
